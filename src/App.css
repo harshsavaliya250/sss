@@ -1,0 +1,275 @@
+/* ===========================================
+--------------Comman css-----------------
+====================================================*/
+:root{
+    --bgblue:#007aff;
+    --bgbluelight:#35c7df;
+    --bgwhite:#ffff;
+}
+.spacer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.spacer-b{
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none !important;
+    transition: .5s;
+    cursor: pointer;
+}
+li{
+    list-style: none !important;
+}
+.container{
+    padding: 0 !important;
+}
+
+/* ==================================================
+-----------------TopHeader Css-----------------------
+===========================================================*/
+.icon{
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--bgblue)!important;
+}
+.info-text{
+    color: black;
+}
+
+/* ================================================================
+--------------------Navigation Css----------------------------
+=====================================================================*/
+.nav-text >li >a{
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    color: black;
+}
+.nav-text li:hover >a{
+    color:var(--bgblue)!important;
+}
+.line li a{
+    position: relative;
+}
+.line li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:var(--bgblue);
+    transition: .3s;
+}
+.line li:hover a::after{
+    width: 100%;
+}
+.main_navigation{
+    background-color: var(--bgwhite);
+}
+/* =========================================================================
+-----------------------------Product card css--------------------
+===========================================================================*/
+.butn{
+    border: none;
+    background-color: var(--bgblue);
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffff;
+}
+button{
+    box-shadow: 0px 10px 8px rgba(0, 0, 255, .2);
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.containt{
+    width: calc(25% - 16px) !important;
+    margin: 8px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .5s;
+    background: #f2f2f2;
+}
+.containt .single-product img{
+    transition: .3s;
+}
+.containt:hover{
+    box-shadow: 0 3px 6px  rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px,-8);
+}
+.single-product{
+    overflow: hidden;
+}
+.single-product >img{
+    width: 100%;
+    height: 210px;
+    text-align: center; 
+    margin: 0 auto;
+    display: block;
+}
+.containt:hover .single-product img{
+    transform: scale(1.1);
+}
+.butn-l{
+    background-color: var(--bgbluelight);
+    border: none;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding: 10px;
+    color: #ffff;
+    width: 50%;
+    transition: .4s;
+    border:2px solid white;
+}
+.butn-r{
+    background-color: var(--bgblue);
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;   
+    padding: 10px;
+    color: #ffff;
+    width: 50%;
+    transition: .4s;
+    margin-left: -8px;
+    border:1px solid white;
+}
+.butn-l:hover{
+    background-color: black;
+    color: #f2f2f2;
+    transition: .4s;
+    transform: scale(0.9);
+}
+.butn-r:hover{
+    background-color: black;
+    color: #f2f2f2;
+    transition: .4s;
+    transform: scale(0.9);
+}
+/* =======================================================
+        
+======================================================= */
+
+.submit-butn{
+    margin: 0;
+    width: 130px;
+    background-color: var(--bgblue);
+    color: #f2f2f2;
+    border: none;
+    padding: 13.5px;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+.submit input{
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(78, 78, 78);
+    color: #f2f2f2;
+    width: 260px;
+}
+.social_icon{
+    color: #f2f2f2 !important;
+}
+.social_icon a:hover{
+    color: var(--bgbluelight);
+    background-color: #f2f2f2;
+}
+.copy_write{
+    background-color: black !important;
+    color: #f2f2f2 !important;
+}
+.filds-1 div:hover{
+    color: var(--bgbluelight);
+    margin-left: 7px;
+} 
+.filds-1 div{
+    transition: .2s;
+} 
+.fields li:hover{
+    color: var(--bgbluelight);
+    margin-left: 7px;
+}
+.menubar{
+    position: relative;
+    display: inline-block;
+}
+.sub_menu-1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0;
+}
+.sub_menu-1 li a{
+    color: var(--bgblue);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .2s;
+}
+.sub_menu-1 li:hover{
+    background-color: #ddd;
+    font-weight: bold;
+}
+.menubar:hover .sub_menu-1{
+    display: block;
+}
+.slider{
+    z-index: -1;
+}
+.facebook a{
+    transition: .4s;
+}
+
+.facebook a:hover{
+    color: #4267B2 !important;
+}
+.whatsapp a{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.whatsapp a::before{
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    height: 27px;
+    width: 26px;
+    background-color: #212529;
+    border-radius: 50%; 
+    z-index: -1;
+    transition: .4s;
+}
+.whatsapp a:hover::before{
+    background-color: rgb(80, 226, 80) !important;
+}
+.fontcolor{
+    color: var(--bgblue);
+}
+.scroll_controll{
+    height: 90px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
